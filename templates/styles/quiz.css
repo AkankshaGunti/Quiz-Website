@@ -1,0 +1,87 @@
+
+    body {
+        background-color: rgb(106, 196, 101);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .quiz-container {
+        max-width: 600px;
+        margin: 30vh auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: rgb(175, 238, 171); 
+    }
+
+    #question {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #16a242; /* Dark gray text color */
+        font-weight: bold;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        color: #333; /* Dark gray text color */
+        margin: 10px 0;
+    }
+
+    .options li input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    #next-button  {
+        background-color: #4BB543; /* success button color */
+        color: #fff; /* White text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #next-button:hover, #myButton:hover {
+        background-color: #198754; /* Darker green on hover */
+    }
+
+    #result {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+        color: #1f8143; /* Green text color */
+    }
+
+    .runTimer {
+        text-align: right;
+        color: #1f8143; ; /* timer text color */
+    }
+
+    #timer {
+        color: #E74C3C; /* Red timer text color */
+        font-size: 20px;
+    }
+     /* Style for the restart button */
+     #myButton {
+        background-color: #4BB543; /* Primary blue button color */
+        color: #fff; /* White text color */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute; /* Position the button absolutely */
+        top: 20px; /* Distance from the top */
+        right: 20px; /* Distance from the right */
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="./styles/quiz.css">
+    <style>
+        /* Remove underline from anchor links */
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="quiz.html">
+        <button id="myButton">Restart</button>
+    </a>
+    <div class="quiz-container">
+        
+        <div id="question-container">
+
+            <div class="runTimer">
+                <p>Time Remaining: <span id="timer">0:00</span></p>
+            </div>
+
+            <p id="question">Question 1</p>
+            <p id="ques">What is the capital of France?</p>
+            <div class="options">
+                <ul id="answers">
+                    <li><input type="radio" name="q1" value="Paris">Paris</li>
+                    <li><input type="radio" name="q1" value="Berlin">Berlin</li>
+                    <li><input type="radio" name="q1" value="London">London</li>
+                    <li><input type="radio" name="q1" value="Madrid">Madrid</li>
+                </ul>
+            </div>
+        </div>
+        
+        <button id="next-button">Save and Continue</button>
+       
+        <script>
+        const button = document.getElementById("myButton");
+        button.addEventListener("click", function() {
+            alert("You Requested to restart the quiz");
+        });
+     </script>
+        <div id="result"></div>
+        
+    </div>
+
+    <script src="./quiz.js"></script>
+
+</body>
+</html>
+
